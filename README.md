@@ -1,5 +1,5 @@
 # contents
-[Computer Network](#user-content-computer-network)
+[Computer Network](#computer-network)
 
 ## Computer Network
 Computer Networks
