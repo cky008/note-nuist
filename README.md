@@ -26,5 +26,5 @@ Semester for 2020-2021(2)
 [1.7 Metric unit](https://github.com/cky008/note-nuist/blob/main/computer_network/1.7_Metric_Units.md)
 
 [第一章重点内容及总结](https://github.com/cky008/note-nuist/blob/main/computer_network/1_%E9%87%8D%E7%82%B9%E5%86%85%E5%AE%B9.md)
-### Chapter 2 Data Representation in Computer Systems
+### Chapter 2 The Physical Layer
 待续
