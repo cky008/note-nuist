@@ -2,7 +2,7 @@
 *数据传输的理论基础*  
     [2.1 The Theoretical Basis for Data Communication 数据传输的理论基础](https://github.com/cky008/note-nuist/blob/main/computer_network/2.1_The_Theoretical_Basis_for_Data_Communication.md)  
 *数据传输的介质*  
-    2.2 Guided Transmission Media 有线传输介质  
+    [2.2 Guided Transmission Media 有线传输介质](https://github.com/cky008/note-nuist/blob/main/computer_network/2.2_Guided_Transmission_Media.md)  
     2.3 Wireless Transmission 无线传输介质  
     2.4 Communication  Satellites 卫星通讯  
 *数字调制与复用*  
