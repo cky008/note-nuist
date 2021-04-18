@@ -27,4 +27,23 @@ Semester for 2020-2021(2)
 
 [第一章重点内容及总结](https://github.com/cky008/note-nuist/blob/main/computer_network/1_%E9%87%8D%E7%82%B9%E5%86%85%E5%AE%B9.md)
 ### Chapter 2 The Physical Layer
-待续
+[Contents & Key Points](https://github.com/cky008/note-nuist/blob/main/computer_network/2_Contents_%26_Key%20Points.md)
+
+[2.1 The Theoretical Basis for Data Communication 数据传输的理论基础](https://github.com/cky008/note-nuist/blob/main/computer_network/2.1_The_Theoretical_Basis_for_Data_Communication.md)
+
+[2.2 Guided Transmission Media 有线传输介质]()
+
+[2.3 Wireless Transmission 无线传输介质]()
+
+[2.4 Communication  Satellites卫星通讯]()
+
+[2.5 Digital Mudulation and Multiplexing 数字调制与复用]()
+
+[2.6 The Public Switched Telephone Network 公共交换电话网]()
+
+[2.7 The Mobile Telephone System 移动电话系统]()
+
+[第一章重点内容及总结]()
+### Chapter 3
+### Chapter 4
+### Chapter 5
