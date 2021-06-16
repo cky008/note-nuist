@@ -262,7 +262,7 @@ public void start(Stage primaryStage) {
 **JDBC Example**  
 ![JDBC example](https://cdn.jsdelivr.net/gh/cky008/note-nuist@main/gui/img/20210616/JDBC%20example.png)  
 #### 怎么从数据库中取/更新数据  
-[JDBC on 廖雪峰的官方网站](https://www.liaoxuefeng.com/wiki/1252599548343744/130515208870300)  
+[JDBC on 廖雪峰的官方网站](https://www.liaoxuefeng.com/wiki/1252599548343744/1255943820274272)  
 ### C#  Socket  
 #### P25~33  
 **Server Broadcast example**  
