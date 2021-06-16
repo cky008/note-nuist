@@ -238,23 +238,21 @@ public void start(Stage primaryStage) {
    new KeyFrame(Duration.millis(500), eventHandler));
    animation.setCycleCount(Timeline.INDEFINITE);
    animation.play(); // Start animation
-
-	    // Pause and resume animation
-	    text.setOnMouseClicked(e -> {
-	      if (animation.getStatus() == Animation.Status.PAUSED) {
-	        animation.play();
-	      }
-	      else {
-	        animation.pause();
-	      }
-	    });
+   // Pause and resume animation
+   text.setOnMouseClicked(e -> {
+   if (animation.getStatus() == Animation.Status.PAUSED) {
+	animation.play();
+	}
+	else {
+	animation.pause();
+	}
+   });
 	    
-	    // Create a scene and place it in the stage
-	    Scene scene = new Scene(pane, 250, 50);
-	    primaryStage.setTitle("TimelineDemo"); // Set the stage title
-	    primaryStage.setScene(scene); // Place the scene in the stage
-	    primaryStage.show(); // Display the stage
-	  
+   // Create a scene and place it in the stage
+   Scene scene = new Scene(pane, 250, 50);
+   primaryStage.setTitle("TimelineDemo"); // Set the stage title
+   primaryStage.setScene(scene); // Place the scene in the stage
+   primaryStage.show(); // Display the stage	  
 }
 ```
 ### JDBC  
@@ -462,25 +460,24 @@ import java.awt.FlowLayout;
 import java.awt.event.*;
 import javax.swing.*;
 public class ButtonEvent1 {
-
 public static void main(String[] args) {
-// TODO Auto-generated method stub
-JFrame f=new JFrame("Button Example");
-JButton b1=new JButton("OK");
-JButton b2=new JButton("Cancel");
-b1.addActionListener(new ActionListener(){
-public void actionPerformed(ActionEvent e){
-System.out.println("OK Button Clicked");
-}});
-b2.addActionListener(new ActionListener(){
-public void actionPerformed(ActionEvent e){
-System.out.println("Cancel Button Clicked");
-}});
-f.add(b1);f.add(b2);
-f.setLayout(new FlowLayout());
-f.pack();
-f.setVisible(true);
-}
+	// TODO Auto-generated method stub
+	JFrame f=new JFrame("Button Example");
+	JButton b1=new JButton("OK");
+	JButton b2=new JButton("Cancel");
+	b1.addActionListener(new ActionListener(){
+		public void actionPerformed(ActionEvent e){
+		System.out.println("OK Button Clicked");
+	}});
+	b2.addActionListener(new ActionListener(){
+		public void actionPerformed(ActionEvent e){
+		System.out.println("Cancel Button Clicked");
+	}});
+	f.add(b1);f.add(b2);
+	f.setLayout(new FlowLayout());
+	f.pack();
+	f.setVisible(true);
+	}
 }
 ```
 **Multiple implementation listener**  
