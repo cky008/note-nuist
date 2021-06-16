@@ -278,53 +278,173 @@ using System.Threading;
 
 public class server
 {
-static ArrayList list = new ArrayList();  
-static ReaderWriterLock rw = new ReaderWriterLock(); 
+	static ArrayList list = new ArrayList();  
+	static ReaderWriterLock rw = new ReaderWriterLock(); 
 
-static public void remove(object obj)
-{
-rw.AcquireWriterLock(Timeout.Infinite);  
-list.Remove(obj) ;
-rw.ReleaseWriterLock(); 
+	static public void remove(object obj)
+	{
+		rw.AcquireWriterLock(Timeout.Infinite);  
+		list.Remove(obj) ;
+		rw.ReleaseWriterLock(); 
+	}
+	
+	static public void AddList(object obj)
+	{
+		rw.AcquireWriterLock(Timeout.Infinite);  
+		list.Add(obj) ;
+		rw.ReleaseWriterLock(); 
+	}
+
+	static public void SendToAll(byte[] binData)
+	{
+		rw.AcquireWriterLock(Timeout.Infinite);  
+		for(int k = 0; k<list.Count; k++)
+		{
+			Communication com = (Communication)list[k]; 
+			Socket sock = com.socket;
+			sock.Send(binData); 
+		}
+		rw.ReleaseWriterLock();  
+	}
+	
+	public static void Main() 
+	{
+		bool connected =false;
+		int count =0;
+		TcpListener myListener = null;
+		try  {
+			string hostName = Dns.GetHostName();
+			IPHostEntry ipEntry = Dns.GetHostByName(hostName);
+			myListener = new TcpListener(ipEntry.AddressList[0],8001);	
+			myListener.Start();
+			Console.WriteLine("The server is running at port: " + myListener.LocalEndpoint);
+			Console.WriteLine("Waiting for a connection.....");
+			while(true) {
+			Socket socket=myListener.AcceptSocket();	
+			count++;
+			Console.WriteLine("Connection " + count + " accepted from "+socket.RemoteEndPoint);
+			Communication com = new Communication(socket, count);
+			AddList(com); 
+			}
+		}
+		catch (Exception e) 
+		{
+			if(!connected)Console.WriteLine("Error..... " + e.ToString() );
+		}		
+		myListener.Stop();
+		Console.WriteLine("\nClient closed connection");
+		Console.ReadLine();
+	}
+
+	public class Communication
+	{
+		public Socket socket=null;
+		int n;
+		public Communication(Socket sock, int k)
+		{
+			socket = sock;
+			n = k;
+			Thread t = new Thread (new ThreadStart (Talk));
+			t.Start(); 
+		}
+		
+		public void Talk()
+		{
+			byte[] binDataIn = new byte [255];
+			Console.WriteLine("The socket " + n + " begin to work... ");	
+			try  {
+				while(true) {			
+					int k=socket.Receive(binDataIn);
+					if(k==0) break;	// if client closed
+					ASCIIEncoding asciiEnc = new ASCIIEncoding();
+					string msg = asciiEnc.GetString(binDataIn,0,k);	
+					msg = "from client " + n +": " + msg;
+					byte[] binDataOut = asciiEnc.GetBytes(msg); 
+					SendToAll(binDataOut);
+					Console.WriteLine(msg);				
+				}
+			}
+			catch(Exception) { }
+			Console.WriteLine("Client " + n +" Disconnected");	
+			remove(this);
+			socket.Close();
+		}
+	}
 }
-static public void AddList(object obj)
+```
+**Client side**  
+> In client side we need to add one thread to take care the messages from broadcasting.  
+
+```csharp
+using System;
+using System.IO;
+using System.Net;
+using System.Text;
+using System.Net.Sockets;
+using System.Threading ;
+
+public class client
 {
-rw.AcquireWriterLock(Timeout.Infinite);  
-list.Add(obj) ;
-rw.ReleaseWriterLock(); 
+	static bool connected = false;
+	static Socket socket = null;
+	
+	public static void Main() 
+	{
+		Console.WriteLine("Please enter the Server IP address");
+		string IP = Console.ReadLine();
+		Console.WriteLine("Please enter the Server HTTP port number");
+		string port = Console.ReadLine();
+		int p;
+		try{   
+			p = Int32.Parse(port);    
+		}
+		catch(Exception)
+		{
+			Console.WriteLine("Wrong port number");
+			return;
+		}
+		socket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp );
+		IPHostEntry IpEntry = Dns.GetHostByAddress(IP);
+		IPAddress hostAddress = IpEntry.AddressList[0];
+		IPEndPoint hostEndPoint = new IPEndPoint(hostAddress, p);
+		Console.WriteLine("Connecting.....");
+		try {
+			socket.Connect(hostEndPoint); 
+		}
+		catch(Exception) {
+			Console.WriteLine("No connection to server\nPress enter to exit");
+			Console.ReadLine(); 
+			return;
+		}
+		connected = socket.Connected;
+		if(connected) Console.WriteLine("Connected");
+		Console.WriteLine("Enter the string to be transmitted : ");
+		ASCIIEncoding asciiEnc= new ASCIIEncoding();
+		Thread t = new Thread(new ThreadStart(GetMsg));
+		t.Start(); 
+		while(connected){
+			String str=Console.ReadLine();
+			if(str.ToLower() =="quit") break;
+			byte[] binData = asciiEnc.GetBytes(str);
+			socket.Send(binData, 0, binData.Length, SocketFlags.None); 	
+			socket.Close(); 
+		}
+	}
+	
+	static private void GetMsg()
+	{
+		ASCIIEncoding asciiEnc= new ASCIIEncoding();
+		while(connected)
+		{
+			byte[] bb=new byte[255];
+			int k = socket.Receive(bb, 0, bb.Length , SocketFlags.None); 
+			string msg = asciiEnc.GetString(bb,0,k);
+			Console.WriteLine( msg);
+		}
+	}
 }
 
-static public void SendToAll(byte[] binData)
-{
-rw.AcquireWriterLock(Timeout.Infinite);  
-for(int k = 0; k<list.Count; k++)
-{
-Communication com = (Communication)list[k]; 
-Socket sock = com.socket;
-sock.Send(binData); 
-}
-rw.ReleaseWriterLock();  
-}
-public static void Main() 
-{
-bool connected =false;
-int count =0;
-TcpListener myListener = null;
-try  {
-string hostName = Dns.GetHostName();
-IPHostEntry ipEntry = Dns.GetHostByName(hostName);
-myListener = new TcpListener(ipEntry.AddressList[0],8001);	
-myListener.Start();
-Console.WriteLine("The server is running at port: " + 				myListener.LocalEndpoint);
-Console.WriteLine("Waiting for a connection.....");
-while(true) {
-Socket socket=myListener.AcceptSocket();	
-count++;
-Console.WriteLine("Connection " + count + " accepted from 			"+socket.RemoteEndPoint);
-Communication com = new Communication(socket, count);
-AddList(com); 
- 	}
-}
+
 ```
 [Socket Programming in C# on geeksforgeeks](https://www.geeksforgeeks.org/socket-programming-in-c-sharp/)  
 ### 其他  
