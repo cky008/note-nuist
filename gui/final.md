@@ -8,7 +8,7 @@
 问答 10分  
 ## 要看的代码  
 ### Java Swing  
-#### 打鸭子  
+#### [打鸭子](shootduck)  
 ![shoot duck](https://cdn.jsdelivr.net/gh/cky008/note-nuist@main/gui/img/20210616/shoot%20duck.jpg)  
 ```csharp
 using System;
