@@ -8,7 +8,8 @@
 问答 10分  
 ## 要看的代码  
 ### Java Swing  
-#### [打鸭子](shootduck)  
+#### [打鸭子](shootduck.java)  
+↑上面是java版本的 点进去看源码 下面是[c#](shootduck)的  
 ![shoot duck](https://cdn.jsdelivr.net/gh/cky008/note-nuist@main/gui/img/20210616/shoot%20duck.jpg)  
 ```csharp
 using System;
