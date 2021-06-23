@@ -1,0 +1,9 @@
+c:\users\nicholas\documents\visual studio 2013\Projects\shootduck\shootduck\bin\Debug\shootduck.exe.config
+c:\users\nicholas\documents\visual studio 2013\Projects\shootduck\shootduck\bin\Debug\shootduck.exe
+c:\users\nicholas\documents\visual studio 2013\Projects\shootduck\shootduck\bin\Debug\shootduck.pdb
+c:\users\nicholas\documents\visual studio 2013\Projects\shootduck\shootduck\obj\Debug\shootduck.csprojResolveAssemblyReference.cache
+c:\users\nicholas\documents\visual studio 2013\Projects\shootduck\shootduck\obj\Debug\shootduck.Form1.resources
+c:\users\nicholas\documents\visual studio 2013\Projects\shootduck\shootduck\obj\Debug\shootduck.Properties.Resources.resources
+c:\users\nicholas\documents\visual studio 2013\Projects\shootduck\shootduck\obj\Debug\shootduck.csproj.GenerateResource.Cache
+c:\users\nicholas\documents\visual studio 2013\Projects\shootduck\shootduck\obj\Debug\shootduck.exe
+c:\users\nicholas\documents\visual studio 2013\Projects\shootduck\shootduck\obj\Debug\shootduck.pdb
