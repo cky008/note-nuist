@@ -218,42 +218,54 @@ public class MouseEventDemo extends Application {
 #### P34  
 > **PathTransition** and **FadeTransition** define specialized animations. The **Timeline** class can be used to program any animation using one or more **KeyFrames**. Each **KeyFrame** is executed sequentially at a specified time interval. **Timeline** inherits from **Animation**.  
 ```java
-public void start(Stage primaryStage) {
-   StackPane pane = new StackPane();
-   Text text = new Text(20, 50, "Programming if fun");
-   text.setFill(Color.RED);
-   pane.getChildren().add(text); // Place text into the stack pane
-   
-   // Create a handler for changing text
-   EventHandler<ActionEvent> eventHandler = e -> {
-      if (text.getText().length() != 0) {
-         text.setText("");
-      }
-      else {
-         text.setText("Programming is fun");
-      }
-   };
-	    
-   // Create an animation for alternating text
-   Timeline animation = new Timeline(
-   new KeyFrame(Duration.millis(500), eventHandler));
-   animation.setCycleCount(Timeline.INDEFINITE);
-   animation.play(); // Start animation
-   // Pause and resume animation
-   text.setOnMouseClicked(e -> {
-   if (animation.getStatus() == Animation.Status.PAUSED) {
-	animation.play();
-	}
-	else {
-	animation.pause();
-	}
-   });
-	    
-   // Create a scene and place it in the stage
-   Scene scene = new Scene(pane, 250, 50);
-   primaryStage.setTitle("TimelineDemo"); // Set the stage title
-   primaryStage.setScene(scene); // Place the scene in the stage
-   primaryStage.show(); // Display the stage	  
+public class TimelineDemo extends Application {
+    @Override // Override the start method in the Application class
+    public void start(Stage primaryStage) {
+        StackPane pane = new StackPane();
+        Text text = new Text(20, 50, "Programming if fun");
+        text.setFill(Color.RED);
+        pane.getChildren().add(text); // Place text into the stack pane
+
+        // Create a handler for changing text
+        EventHandler<ActionEvent> eventHandler = e -> {
+            if (text.getText().length() != 0) {
+                text.setText("");
+            }
+            else {
+                text.setText("Programming is fun");
+            }
+        };
+
+        // Create an animation for alternating text
+        Timeline animation = new Timeline(
+                new KeyFrame(Duration.millis(500), eventHandler));
+        animation.setCycleCount(Timeline.INDEFINITE);
+        animation.play(); // Start animation
+
+        // Pause and resume animation
+        text.setOnMouseClicked(e -> {
+            if (animation.getStatus() == Animation.Status.PAUSED) {
+                animation.play();
+            }
+            else {
+                animation.pause();
+            }
+        });
+
+        // Create a scene and place it in the stage
+        Scene scene = new Scene(pane, 250, 50);
+        primaryStage.setTitle("TimelineDemo"); // Set the stage title
+        primaryStage.setScene(scene); // Place the scene in the stage
+        primaryStage.show(); // Display the stage
+    }
+
+    /**
+     * The main method is only needed for the IDE with limited
+     * JavaFX support. Not needed for running from the command line.
+     */
+    public static void main(String[] args) {
+        launch(args);
+    }
 }
 ```
 ### JDBC  
