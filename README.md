@@ -6,6 +6,7 @@ Computer Networks
 Semester for 2020-2021(2)  
 郭萍授课  
 笔记整理By cky_008  
+这还是我的一个小图床...
 
 ### Chapter 1 Introduction
 [1.1 Uses of computer networks](/computer_network/1.1_Uses_of_Computer_Networks.md)  
