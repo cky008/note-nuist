@@ -1,1 +1,106 @@
-<mxfile host="app.diagrams.net" modified="2022-11-11T00:50:41.685Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36 Edg/107.0.1418.35" version="20.5.1" etag="r9CcU9pd_gAbEIpcbkUh" type="github"><diagram id="i505uTj9jNunIqEYuS5m">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2022-11-11T01:06:02.058Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36 Edg/107.0.1418.35" etag="JDiXNxQVDR-q6PFsGB1Q" version="20.5.1" type="github">
+  <diagram id="i505uTj9jNunIqEYuS5m" name="第 1 页">
+    <mxGraphModel dx="603" dy="790" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="6hNbcYGKXFEUJrrH9xau-1" value="Manufacturing Company – Produce Invoice and Delivery Note (BPMN Exercise 3)&amp;nbsp;" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;" vertex="1" parent="1">
+          <mxGeometry x="430" y="10" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6hNbcYGKXFEUJrrH9xau-2" value="Produce Invoice and Delivery Note" style="swimlane;html=1;childLayout=stackLayout;resizeParent=1;resizeParentMax=0;horizontal=0;startSize=20;horizontalStack=0;" vertex="1" parent="1">
+          <mxGeometry x="20" y="50" width="1480" height="270" as="geometry" />
+        </mxCell>
+        <mxCell id="6hNbcYGKXFEUJrrH9xau-3" value="Manufacturing Company" style="swimlane;html=1;startSize=20;horizontal=0;" vertex="1" parent="6hNbcYGKXFEUJrrH9xau-2">
+          <mxGeometry x="20" width="1460" height="270" as="geometry" />
+        </mxCell>
+        <mxCell id="6hNbcYGKXFEUJrrH9xau-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="6hNbcYGKXFEUJrrH9xau-3" source="6hNbcYGKXFEUJrrH9xau-6" target="6hNbcYGKXFEUJrrH9xau-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6hNbcYGKXFEUJrrH9xau-6" value="Completed work order is received and compared against the original order" style="points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];shape=mxgraph.bpmn.task;whiteSpace=wrap;rectStyle=rounded;size=10;taskMarker=abstract;" vertex="1" parent="6hNbcYGKXFEUJrrH9xau-3">
+          <mxGeometry x="130" y="95" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="6hNbcYGKXFEUJrrH9xau-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="6hNbcYGKXFEUJrrH9xau-3" source="6hNbcYGKXFEUJrrH9xau-7" target="6hNbcYGKXFEUJrrH9xau-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6hNbcYGKXFEUJrrH9xau-7" value="" style="points=[[0.145,0.145,0],[0.5,0,0],[0.855,0.145,0],[1,0.5,0],[0.855,0.855,0],[0.5,1,0],[0.145,0.855,0],[0,0.5,0]];shape=mxgraph.bpmn.event;html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;align=center;perimeter=ellipsePerimeter;outlineConnect=0;aspect=fixed;outline=standard;symbol=general;" vertex="1" parent="6hNbcYGKXFEUJrrH9xau-3">
+          <mxGeometry x="40" y="110" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="6hNbcYGKXFEUJrrH9xau-9" value="An invoice for the customer is produced " style="points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];shape=mxgraph.bpmn.task;whiteSpace=wrap;rectStyle=rounded;size=10;taskMarker=abstract;" vertex="1" parent="6hNbcYGKXFEUJrrH9xau-3">
+          <mxGeometry x="290" y="95" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="6hNbcYGKXFEUJrrH9xau-14" value="" style="points=[[0.25,0.25,0],[0.5,0,0],[0.75,0.25,0],[1,0.5,0],[0.75,0.75,0],[0.5,1,0],[0.25,0.75,0],[0,0.5,0]];shape=mxgraph.bpmn.gateway2;html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;align=center;perimeter=rhombusPerimeter;outlineConnect=0;outline=none;symbol=none;gwType=exclusive;" vertex="1" parent="6hNbcYGKXFEUJrrH9xau-3">
+          <mxGeometry x="770" y="110" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="6hNbcYGKXFEUJrrH9xau-21" value="Invoice is sent directly to the customer" style="points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];shape=mxgraph.bpmn.task;whiteSpace=wrap;rectStyle=rounded;size=10;taskMarker=abstract;" vertex="1" parent="6hNbcYGKXFEUJrrH9xau-3">
+          <mxGeometry x="960" y="30" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="6hNbcYGKXFEUJrrH9xau-22" value="good credit rating" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="6hNbcYGKXFEUJrrH9xau-3" source="6hNbcYGKXFEUJrrH9xau-14" target="6hNbcYGKXFEUJrrH9xau-21">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="795" y="70" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6hNbcYGKXFEUJrrH9xau-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="6hNbcYGKXFEUJrrH9xau-3" source="6hNbcYGKXFEUJrrH9xau-28" target="6hNbcYGKXFEUJrrH9xau-33">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6hNbcYGKXFEUJrrH9xau-28" value="" style="points=[[0.25,0.25,0],[0.5,0,0],[0.75,0.25,0],[1,0.5,0],[0.75,0.75,0],[0.5,1,0],[0.25,0.75,0],[0,0.5,0]];shape=mxgraph.bpmn.gateway2;html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;align=center;perimeter=rhombusPerimeter;outlineConnect=0;outline=none;symbol=none;gwType=exclusive;" vertex="1" parent="6hNbcYGKXFEUJrrH9xau-3">
+          <mxGeometry x="1140" y="110" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="6hNbcYGKXFEUJrrH9xau-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="6hNbcYGKXFEUJrrH9xau-3" source="6hNbcYGKXFEUJrrH9xau-21" target="6hNbcYGKXFEUJrrH9xau-28">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1165" y="70" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6hNbcYGKXFEUJrrH9xau-33" value="The delivery note is sent to the warehouse" style="points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];shape=mxgraph.bpmn.task;whiteSpace=wrap;rectStyle=rounded;size=10;taskMarker=abstract;" vertex="1" parent="6hNbcYGKXFEUJrrH9xau-3">
+          <mxGeometry x="1230" y="95" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="6hNbcYGKXFEUJrrH9xau-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="6hNbcYGKXFEUJrrH9xau-11" target="6hNbcYGKXFEUJrrH9xau-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6hNbcYGKXFEUJrrH9xau-11" value="A delivery note is produced to accompany the product " style="points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];shape=mxgraph.bpmn.task;whiteSpace=wrap;rectStyle=rounded;size=10;taskMarker=abstract;" vertex="1" parent="1">
+          <mxGeometry x="490" y="145" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="6hNbcYGKXFEUJrrH9xau-12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="6hNbcYGKXFEUJrrH9xau-9" target="6hNbcYGKXFEUJrrH9xau-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6hNbcYGKXFEUJrrH9xau-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="6hNbcYGKXFEUJrrH9xau-14" target="6hNbcYGKXFEUJrrH9xau-23">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="835" y="250" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6hNbcYGKXFEUJrrH9xau-27" value="cash-on-delivery (COD)" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="6hNbcYGKXFEUJrrH9xau-26">
+          <mxGeometry x="0.1767" y="5" relative="1" as="geometry">
+            <mxPoint x="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6hNbcYGKXFEUJrrH9xau-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="6hNbcYGKXFEUJrrH9xau-16" target="6hNbcYGKXFEUJrrH9xau-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6hNbcYGKXFEUJrrH9xau-16" value="Check customer status" style="points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];shape=mxgraph.bpmn.task;whiteSpace=wrap;rectStyle=rounded;size=10;taskMarker=abstract;" vertex="1" parent="1">
+          <mxGeometry x="650" y="145" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="6hNbcYGKXFEUJrrH9xau-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="6hNbcYGKXFEUJrrH9xau-23" target="6hNbcYGKXFEUJrrH9xau-28">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1205" y="250" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6hNbcYGKXFEUJrrH9xau-23" value="Invoice is forwarded to the warehouse for &#xa;packing with the product" style="points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];shape=mxgraph.bpmn.task;whiteSpace=wrap;rectStyle=rounded;size=10;taskMarker=abstract;" vertex="1" parent="1">
+          <mxGeometry x="1000" y="210" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="6hNbcYGKXFEUJrrH9xau-35" value="" style="points=[[0.145,0.145,0],[0.5,0,0],[0.855,0.145,0],[1,0.5,0],[0.855,0.855,0],[0.5,1,0],[0.145,0.855,0],[0,0.5,0]];shape=mxgraph.bpmn.event;html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;align=center;perimeter=ellipsePerimeter;outlineConnect=0;aspect=fixed;outline=end;symbol=terminate2;" vertex="1" parent="1">
+          <mxGeometry x="1430" y="160" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="6hNbcYGKXFEUJrrH9xau-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="6hNbcYGKXFEUJrrH9xau-33" target="6hNbcYGKXFEUJrrH9xau-35">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
