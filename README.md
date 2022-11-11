@@ -1,5 +1,6 @@
 # contents
 [Computer Network](#computer-network)  
+[Business Analytics in SETU](#business-analytics)  
 
 ## Computer Network
 Computer Networks  
@@ -31,3 +32,62 @@ Semester for 2020-2021(2)
 ### Chapter 3  
 ### Chapter 4  
 ### Chapter 5
+
+## Business Analytics
+Business Analytics
+Semester for 2022-2023(1)  
+Liam Doyle授课  
+一个小图床...
+
+
+### BPMN Exercise 1
+[Manufacturing Company – Receive Order Process](/others/BPNM1.drawio). 
+1. The order is received and checked.  
+2. Customers are checked to see if they are on the customer database.  
+3. New customers are entered onto the database.  
+4. The customer is checked for credit worthiness.  
+5. If the credit check is positive, the order is processed and confirmation is sent to the customer.  
+6. If the credit check is questionable the finance department will advise whether to proceed with the order.  
+  a. If the order is to proceed a confirmation will be sent to the customer that the goods will be supplied on a cash on delivery (COD) basis.  
+  b. If the order is not to proceed a message will be sent to the customer that the order cannot be fulfilled.  
+7. For orders that are to proceed a requirements list is produced.  
+![Receive Order Process](/others/BPNM1.jpg)  
+
+
+### BPMN Exercise 2
+[Manufacturing Company – Assemble Ordered Products](/others/BPNM2.drawio). 
+1. The customer order requirements are checked for parts availability.  
+2. If any parts are not in stock, then a list is produced and parts ordered from the supplier.  
+3. The parts supplier sends a delivery schedule.  
+4. A work order is produced.  
+5. A product delivery schedule is produced and sent to the customer.  
+6. Parts from the parts supplier are received.  
+7. The products are assembled.  
+8. Products are delivered to the warehouse.  
+9. The work order is completed.  
+![Assemble Ordered Products](/others/BPMN2.jpg)  
+
+
+### BPMN Exercise 3
+[Manufacturing Company – Produce Invoice and Delivery Note](/others/BPNM3.drawio). 
+1. When a completed work order is received it is compared against the original order.  
+2. An invoice for the customer is produced.  
+3. A delivery note is produced to accompany the product.  
+4. If the customer has a good credit rating, the invoice is sent directly to the customer.  
+5. If the customer is cash-on-delivery (COD) the invoice is forwarded to the warehouse for packing with the product.  
+6. The delivery note is sent to the warehouse.  
+![Produce Invoice and Delivery Note](/others/BPMN3.jpg)  
+
+
+### BPMN Exercise 4
+[Manufacturing Company – Pack and Ship Products](/others/BPNM4.drawio). 
+1. The assembled products are received with the delivery note.  
+2. An invoice is received for COD customers and packed with products.  
+3. The products are checked for special packing.  
+4. The delivery note and the invoice (for COD customers) are packed with the products.  
+5. Negotiation takes place to find the best shipping company.  
+6. The appropriate shipping company is selected and ordered.  
+7. A Bill of Lading is produced.  
+8. When the shipping company arrives the goods are handed over with the Bill of Lading. 
+![Pack and Ship Products](/others/BPMN4.jpg)  
+
