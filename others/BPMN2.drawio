@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-11-11T00:26:32.195Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36 Edg/107.0.1418.35" etag="X3QDN3nO1nj7GzPdW11V" version="20.5.1" type="github">
+<mxfile host="app.diagrams.net" modified="2022-11-11T00:45:45.586Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36 Edg/107.0.1418.35" etag="ayC7FkRi61RYuDofm9QT" version="20.5.1" type="github">
   <diagram id="Fy_xnkCLufcFKRbf-qhm" name="第 1 页">
-    <mxGraphModel dx="1378" dy="1149" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="876" dy="1149" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -41,13 +41,17 @@
           <mxGeometry x="920" y="125" width="120" height="80" as="geometry" />
         </mxCell>
         <mxCell id="dQ3IUtjXQcdoY3WB8gmI-88" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="dQ3IUtjXQcdoY3WB8gmI-2" source="dQ3IUtjXQcdoY3WB8gmI-78" target="dQ3IUtjXQcdoY3WB8gmI-87">
-          <mxGeometry relative="1" as="geometry" />
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1150" y="250" />
+            </Array>
+          </mxGeometry>
         </mxCell>
         <mxCell id="dQ3IUtjXQcdoY3WB8gmI-78" value="Product delivery schedule is produced and sent to the customer" style="points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];shape=mxgraph.bpmn.task;whiteSpace=wrap;rectStyle=rounded;size=10;taskMarker=abstract;" vertex="1" parent="dQ3IUtjXQcdoY3WB8gmI-2">
           <mxGeometry x="1090" y="125" width="120" height="80" as="geometry" />
         </mxCell>
         <mxCell id="dQ3IUtjXQcdoY3WB8gmI-87" value=" Parts from the parts supplier are received" style="points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];shape=mxgraph.bpmn.task;whiteSpace=wrap;rectStyle=rounded;size=10;taskMarker=abstract;" vertex="1" parent="dQ3IUtjXQcdoY3WB8gmI-2">
-          <mxGeometry x="1290" y="210" width="120" height="80" as="geometry" />
+          <mxGeometry x="1260" y="210" width="120" height="80" as="geometry" />
         </mxCell>
         <mxCell id="dQ3IUtjXQcdoY3WB8gmI-92" value="The products are assembled" style="points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];shape=mxgraph.bpmn.task;whiteSpace=wrap;rectStyle=rounded;size=10;taskMarker=abstract;" vertex="1" parent="dQ3IUtjXQcdoY3WB8gmI-2">
           <mxGeometry x="1544" y="125" width="120" height="80" as="geometry" />
